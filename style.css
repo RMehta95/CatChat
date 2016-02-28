@@ -11,3 +11,18 @@
 .container-fluid .jumbotron {
     border-radius: 0px;
 }
+
+#chatbox {
+    height:100px;
+    width: 100px;
+    background-color: #ccbfbf;
+}
+
+#psych {
+    width: 200px; /* you can use % */
+    height: auto;
+}
+
+.row {
+    background-color: red;
+}
