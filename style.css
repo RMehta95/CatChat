@@ -1,0 +1,36 @@
+
+
+.jumbotron { 
+    background-color: #520063; /* Purple */
+    color: #ffffff;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.container-fluid .jumbotron {
+    border-radius: 0px;
+}
+
+#chatbox {
+    height:100px;
+    width: 100px;
+    background-color: #ccbfbf;
+}
+
+/*This logo resize isn't working for some reason*/
+img #logo {
+    float: left;
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+img #psych {
+    width: 200px; /* you can use % */
+    height: auto;
+}
+
