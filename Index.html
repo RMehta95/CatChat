@@ -14,7 +14,7 @@
     <script src="bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
 
     <!-- Custom CSS and JS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="script.js"></script>
 
   </head>
@@ -27,7 +27,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span> 
             </button>
-          <a class="navbar-brand" href="#">CatChat</a>
+          <a class="navbar-brand" id="catchat" href="#">CatChat</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -52,12 +52,28 @@
             </div>
         </div>
     </div>
+
+    <div id="welcome">
+        <div class="container">
+          <div class="row featurette">
+            <div class="col-md-8">
+              <h2 class="featurette-heading">Welcome to CatChat<br><span class="text-muted">
+                Stressed?</span></h2></br>
+              <p class="lead text-justify"><br> Log in to talk to licensed professionals right now!</p>
+              <div id="chatbox">Start chatting by typing into the box below.
+              </div>
+                <input id="chatsubmit" type="text" name="chat" value="">
+                <button type="button" class="btn btn-primary" id="enter">Chat Now!</button>
+            </div>
+                <div class="col-md-4" id="img">
+                  <img id="psych" src = "psychologist.jpg">
+                </div>
+          </div>
+        </div>
+      </div>
+
     <!-- Container (Chat Section) --> 
-    <div class="row" id="chat">
-      <div class="col-md-8">
-        <div id="chatbox">Welcome to CatChat! Please begin chatting by typing into the box below.</div>
-		<input id="chatsubmit" type="text" name="chat" value="">
-        <button id="enter">Chat Now</button>
+ 
 		<script>
 		var submit = document.getElementById("enter");
 			submit.onclick = function(e) {
@@ -66,44 +82,84 @@
 			}
 		</script>
       </div>
-      <div class="col-md-4">
-        <img id="psych" src = "psychologist.jpg">
+
+    </div>
+    <br>
+
+      <!-- HOW -->
+      <div id="how">
+        <div class="container">
+          <div class="row featurette">
+            <div class="col-md-12">
+              <h2 class="featurette-heading">How It Works: <br><span class="text-muted">short description of how catchat works</span></h2></br>
+              <p class="lead text-justify"><br> Description of How CatChat works</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <br>
+      <!-- ./HOW -->
 
-    <!-- Container (Resources Section) -->
-    <div class="row">
-        <div class="col-md-6">
-            <p> text </p>
+      <!-- LOCATIONS -->
+      <div id="locations">
+        <div class="container">
+          <div class="row featurette">
+            <!--<div class="col-md-5">
+             <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zhsPPL24Vs0g.k0OrDI5WdS8I" width="320" height="240"></iframe>
+            </div>-->
+            <div class="col-md-12">
+              <h2 class="featurette-heading">FAQs: or it could be something else</h2><br>
+        <ul class="lead"><li><b>question?</b></li></ul>
+        <p class="lead text-justify">answer</p>
+        <ul class="lead"><li><b>question?</b></li></ul>
+        <p class="lead text-justify">answer</p>
+        
+        <ul class="lead"><li><b>question?</b></li></ul>
+        <p class="lead text-justify">answer</p>
+        </p></br>
+        <p class="lead text-justify">blah blah text text</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-            <p> text </p>
-        </div>
-    </div>
-    <br>
+      </div>
+      <!-- ./LOCATIONS -->
 
-    <!-- Container (About Us Section) -->
-    <div class="row">
-        <div class="col-md-6">
-            <p> text </p>
+      <!-- CONTACT -->
+      <div id="contactus">
+        <div class="container">
+          <div class="row featurette">      
+            <div class="col-md-5">
+          <form name="contactform" action="" method="post" role="form">
+          <div class="form-group">
+            <label for="inputName" class="col-lg-2 control-label">Name</label>
+            <input type="text" class="form-control" id="inputName" name = "inputName" placeholder="Name">
+          </div>
+        <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" name = "inputEmail" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="inputMessage" class="col-lg-2 control-label">Message</label>
+            <textarea class="form-control" id="inputMessage" name = "inputMessage" rows="7" placeholder="Your message here"></textarea>
+          </div>
+          <button class="btn btn-default" id="submit">Submit</button>
+          </form>
+            </div>      
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Contact Us</h2>
+              <p class="lead">Blah Blah Blah Blah Blah Blah catchat?</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-            <p> text </p>
-        </div>
-    </div>
-    <br>
+      </div>
+      <!-- ./CONTACT -->
 
-    <!-- Container (Contact Us Section) -->
-    <div class="row">
-        <div class="col-md-6">
-            <p> text </p>
-        </div>
-        <div class="col-md-6">
-            <p> text </p>
-        </div>
+      <!-- FOOTER -->
+    <footer>
+    <div id="footer">
+      <div class="container footer-custom">
+      <p class="pull-right"><a href="#homePage">Back to top</a></p>
+      <p>&copy; CatChat 2016</p>
     </div>
-    <br>
-
+    </footer>
   </body>
 </html>
