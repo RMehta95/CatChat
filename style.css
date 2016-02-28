@@ -1,0 +1,13 @@
+.jumbotron { 
+    background-color: #520063; /* Purple */
+    color: #ffffff;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.container-fluid .jumbotron {
+    border-radius: 0px;
+}
