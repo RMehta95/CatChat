@@ -45,6 +45,14 @@
     height: auto;
 }
 
+#logo {
+    float: left;
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
 #how, #contactus{
     background-color: #f8f8ff;
 }
