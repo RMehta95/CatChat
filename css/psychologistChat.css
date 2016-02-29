@@ -8,5 +8,11 @@
 
 #sidebar a{
 	color:#4e2a84;
+    padding-top: 50px;
 
+}
+
+#student-icon {
+    width: 150px;
+    height: auto;
 }

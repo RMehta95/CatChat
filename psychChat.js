@@ -9,5 +9,8 @@ function userResponse(username){
 	i = getRandomInt(0,responseArray.length-1);
 	console.log(i);
 	document.getElementById("chatpagebox").innerHTML =  name + ": " + responseArray[i];
-
+    var icon = document.getElementById("student-icon")
+    if(username == "Rohan") {
+        $(icon).css('src','img/Rohan.jpg');
+    }
 }

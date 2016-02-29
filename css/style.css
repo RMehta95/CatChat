@@ -37,7 +37,11 @@
 
 #enter{
     background-color: #4e2a84;
-    color: #ffffff
+    color: #ffffff;
+    width: 60%;
+    height: 80px;
+    font-size: 24pt;
+    border-radius: 15px;
 }
 .btn{
     border-style: none;
