@@ -1,0 +1,76 @@
+.jumbotron { 
+    background-color:  #4e2a84; /* Purple */
+    color: #ffffff;
+    margin-top: -20px;
+    padding-bottom: 100px;
+}
+
+.navbar {
+    background-color: #401f68;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+#myNavbar a, #catchat{
+    color: #ffffff;
+}
+
+#myNavbar a:hover{
+    color: #A9A9A9;
+}
+
+#catchat:focus{ /*fixes blue outline when clicking catchat homebutton */
+    outline:none;
+}
+
+
+#chatbox {
+    height:100px;
+    width: 245px;
+    background-color: #f8f8ff;
+    padding: 5px;
+}
+
+#enter{
+    background-color: #4e2a84;
+    color: #ffffff
+}
+.btn{
+    border-style: none;
+
+}
+
+#psych {
+    width: 200px; /* you can use % */
+    height: auto;
+}
+
+#logo {
+    float: left;
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+#how, #contactus{
+    background-color: #f8f8ff;
+}
+
+#footer{
+    background-color:#4e2a84;
+}
+
+#contactus{
+    padding: 10px 0 10px 0;
+}
+#footer{
+    color:#ffffff;
+    padding: 20px;
+}
+
+#footer a{
+    color:#ffffff;
+
+}
+

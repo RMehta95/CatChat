@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>CatChat</title>
-
+    
     <!-- Bootstrap -->
+<<<<<<< HEAD
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -57,9 +57,159 @@
 		<h1>Hello, world!</h1>
 	</div>
 
+=======
+    <link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+>>>>>>> origin/master
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script.js"></script>
+
+  </head>
+  <body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>  
+                <span class="icon-bar"></span> 
+            </button>
+            <img src="NUwildcat.png" id="logo">
+            <a class="navbar-brand" id="catchat" href="index.html">CatChat</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="chat.html">CHAT</a></li>
+              <li><a href="#resources">RESOURCES</a></li> 
+              <li><a href="#aboutus">ABOUT US</a></li> 
+              <li><a href="#contactus">CONTACT US</a></li> 
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+	
+    <!-- Container (Jumbotron) --> 
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="jumbotron">
+                <h2>An online chat tool for Northwestern students</h2> 
+            </div>
+        </div>
+    </div>
+
+    <div id="welcome">
+        <div class="container">
+          <div class="row featurette">
+            <div class="col-md-8">
+              <h2 class="featurette-heading">Welcome to CatChat<br><span class="text-muted">
+                Stressed?</span></h2></br>
+              <p class="lead text-justify"><br> Log in to talk to licensed professionals right now!</p>
+              <div id="chatbox">Start chatting by typing into the box below.
+              </div>
+                <input id="chatsubmit" type="text" name="chat" value="">
+                <button type="button" class="btn btn-primary" id="enter">Chat Now!</button>
+            </div>
+                <div class="col-md-4" id="img">
+                  <img src="psychologist.jpg" id="psych">
+                </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Container (Chat Section) --> 
+ 
+		// <script>
+		var submit = document.getElementById("enter");
+			submit.onclick = function(e) {
+				var chatbox = document.getElementById("chatbox");
+				chatbox.innerHTML = "Thank you for trying CatChat! This part of our website is still under construction and not yet fully functional. Please check back at a later date."
+			}
+		// </script>
+      </div>
+
+    </div>
+    <br>
+
+      <!-- HOW -->
+      <div id="how">
+        <div class="container">
+          <div class="row featurette">
+            <div class="col-md-12">
+              <h2 class="featurette-heading">How It Works: <br><span class="text-muted">short description of how catchat works</span></h2></br>
+              <p class="lead text-justify"><br> Description of How CatChat works</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./HOW -->
+
+      <!-- FAQ -->
+      <div id="FAQ">
+        <div class="container">
+          <div class="row featurette">
+            <div class="col-md-12">
+              <h2 class="featurette-heading">FAQs: or it could be something else</h2><br>
+        <ul class="lead"><li><b>question?</b></li></ul>
+        <p class="lead text-justify">answer</p>
+        <ul class="lead"><li><b>question?</b></li></ul>
+        <p class="lead text-justify">answer</p>
+        
+        <ul class="lead"><li><b>question?</b></li></ul>
+        <p class="lead text-justify">answer</p>
+        </p></br>
+        <p class="lead text-justify">blah blah text text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./FAQ -->
+
+      <!-- CONTACT -->
+      <div id="contactus">
+        <div class="container">
+          <div class="row featurette">      
+            <div class="col-md-5">
+          <form name="contactform" action="" method="post" role="form">
+          <div class="form-group">
+            <label for="inputName" class="col-lg-2 control-label">Name</label>
+            <input type="text" class="form-control" id="inputName" name = "inputName" placeholder="Name">
+          </div>
+        <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" name = "inputEmail" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="inputMessage" class="col-lg-2 control-label">Message</label>
+            <textarea class="form-control" id="inputMessage" name = "inputMessage" rows="7" placeholder="Your message here"></textarea>
+          </div>
+          <button class="btn btn-default" id="submit">Submit</button>
+          </form>
+            </div>      
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Contact Us</h2>
+              <p class="lead">Blah Blah Blah Blah Blah Blah catchat?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./CONTACT -->
+
+      <!-- FOOTER -->
+    <footer>
+    <div id="footer">
+      <div class="container footer-custom">
+      <p class="pull-right"><a href="#homePage">Back to top</a></p>
+      <p>&copy; CatChat 2016</p>
+    </div>
+    </footer>
   </body>
 </html>
