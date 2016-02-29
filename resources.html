@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CatChat</title>
+    
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script.js"></script>
+
+</head>
+<body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>  
+                <span class="icon-bar"></span> 
+            </button>
+            <img src="NUwildcat.png" id="logo">
+            <a class="navbar-brand" id="catchat" href="index.html">CatChat</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="userChat.html">CHAT</a></li>
+              <li><a href="resources.html">RESOURCES</a></li> 
+              <li><a href="#aboutus">ABOUT US</a></li> 
+              <li><a href="#contactus">CONTACT US</a></li> 
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+	
+	<!-- VIDEOS -->
+	<div id="welcome">
+        <div class="container">
+          <div class="row featurette">
+            <div class="col-md-12">
+				<h2 class="featurette-heading">Videos</h2>
+				<div id="vid1" style="float:left; width:50%;">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/_uTJJEk4w0U" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div id="vid1_description" style="width:40%; height:330px; padding-left:5%; float:left;">
+					<h3>Kittens and Puppies</h3>
+					<p>The only thing cuter than kittens or puppies is kittens and puppies together!</p>
+				</div>
+				<div id="vid2" style="float:left; width:50%;">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/6p_yaNFSYao" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div id="vid2_description" style="width:40%; height:315px; padding-left:5%; float:left;">
+					<h3>Mindfullness Mediation</h3>
+					<p>This 10 minutes guided mediation on mindfulllness can help you feel refreshed and more focused.</p>
+				</div>
+				<div class="col-md-12" style="height:50px"></div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+	<!-- GAMES -->
+      <div id="how">
+        <div class="container">
+          <div class="row featurette">
+            <div class="col-md-12">
+              <h2 class="featurette-heading">Games</h2>
+				<div id="game1" style="float:left; width:50%;">
+					<a href="http://interactive.usc.edu/projects/cloud/flowing/"><img src="flow.png"></a>
+				</div>
+				<div id="game1_description" style="width:40%; height=315px; padding-left:5%; float:left;">
+					<h3>Flow</h3>
+					<p>Turn up the volume and enjoy the ambiance of a simple game deisgned to simulate life as a hungry microbe.</p>
+				</div>
+            </div>
+			<div class="col-md-12" style="height:100px;"></div>
+          </div>
+        </div>
+      </div>
+	  
+	        <!-- FOOTER -->
+    <footer>
+    <div id="footer">
+      <div class="container footer-custom">
+      <p class="pull-right"><a href="#homePage">Back to top</a></p>
+      <p>&copy; CatChat 2016</p>
+    </div>
+    </footer>
+  </body>
+</html>
