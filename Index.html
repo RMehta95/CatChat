@@ -32,7 +32,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li><a href="chat.html">CHAT</a></li>
+              <li><a href="userChat.html">CHAT</a></li>
               <li><a href="#resources">RESOURCES</a></li> 
               <li><a href="#aboutus">ABOUT US</a></li> 
               <li><a href="#contactus">CONTACT US</a></li> 
@@ -76,26 +76,34 @@
 
     <!-- Container (Chat Section) --> 
  
-	// <script>
+	 <script>
 		var submit = document.getElementById("enter");
 		var i = 0;
+    var messageCount = 0; // sets limit for amount of messages to be sent to prevent overflow
 			submit.onclick = function(e) {
 				var chatbox = document.getElementById("chatbox");
-				if (i==0){
-					chatbox.innerHTML = "You: " + document.getElementById("chatsubmit").value;
-				}
-				if (i > 0) {
-					chatbox.innerHTML = chatbox.innerHTML + '<br>' + "You: " + document.getElementById("chatsubmit").value; 
-				}
-				document.getElementById("chatsubmit").value = "";
-				if (i==0) {
-					setTimeout(response, 1500)
-					i = i + 1;
-				}
-			}
-			function response() {
-				var chatbox = document.getElementById("chatbox");
-				chatbox.innerHTML = chatbox.innerHTML +'<br>' + "CatChat: Thank you for using CatChat! You will be connected with a trained professional shortly.";
+        var message = document.getElementById("chatsubmit").value;
+        if (message){
+  				if (i==0 && messageCount < 3){
+  					chatbox.innerHTML = "You: " + document.getElementById("chatsubmit").value;
+           // messageCount += 1;
+  				}
+  				if (i > 0 && messageCount < 3) {
+  					chatbox.innerHTML = chatbox.innerHTML + '<br>' + "You: " + document.getElementById("chatsubmit").value; 
+            //messageCount += 1;
+  				}
+  				document.getElementById("chatsubmit").value = "";
+  				if (i==0) {
+  					setTimeout(response, 500)
+  					i = i + 1;
+            // messageCount += 1;
+  				}
+          console.log(messageCount);
+  			}
+  			function response() {
+  				var chatbox = document.getElementById("chatbox");
+  				chatbox.innerHTML = chatbox.innerHTML +'<br>' + "CatChat: Thank you for using CatChat! You will be connected with a trained professional shortly.";
+        }
 			}
 	// </script>
       </div>

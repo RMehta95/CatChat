@@ -7,22 +7,8 @@
     <title>CatChat</title>
     
     <!-- Bootstrap -->
-	 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
-	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
@@ -30,6 +16,7 @@
     <!-- Custom CSS and JS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="script.js"></script>
+
 </head>
 <body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <nav class="navbar navbar-inverse">
@@ -45,7 +32,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li><a href="chat.html">CHAT</a></li>
+              <li><a href="userChat.html">CHAT</a></li>
               <li><a href="#resources">RESOURCES</a></li> 
               <li><a href="#aboutus">ABOUT US</a></li> 
               <li><a href="#contactus">CONTACT US</a></li> 
@@ -57,39 +44,49 @@
         </div>
       </div>
     </nav>
-	<div class="jumbotron">
-				<div id="chatbox" style="margin:auto; width:50%; height:500px; color:#000000; overflow:scroll; font-size:18pt; border-radius:2pt;">
+	<div id="chatpageBody">
+				<div id="chatpagebox">
 					Welcome to CatChat! Please begin chatting by typing into the box below.
 				</div>
-				<div style="margin:auto; width:50%">
-				<input style="color:#000000; width:80%; height:50px; font-size:18pt;" id="chatsubmit" type="text" name="chat" value="">
-				<button id="enter" style="width:19.5%; height:50px; font-size:18pt; background-color:#993399;">Send</button>
+				<div id="textbar">
+				<input id="chatpageSubmit" type="text" name="chat" value="">
+				 <button type="button" class="btn btn-primary" id="chatpageEnter">Send</button>
 				</div>
 	</div>
 
 
 <script>
-var submit = document.getElementById("enter");
+var submit = document.getElementById("chatpageEnter");
 var i = 0;
 	submit.onclick = function(e) {
-		var chatbox = document.getElementById("chatbox");
-		if (i==0){
-			chatbox.innerHTML = "You: " + document.getElementById("chatsubmit").value;
-		}
-		if (i > 0) {
-			chatbox.innerHTML = chatbox.innerHTML + '<br>' + "You: " + document.getElementById("chatsubmit").value; 
-		}
-		document.getElementById("chatsubmit").value = "";
-		if (i==0) {
-			setTimeout(response, 1500)
-			i = i + 1;
-		}
-	}
-	function response() {
-		var chatbox = document.getElementById("chatbox");
-		chatbox.innerHTML = chatbox.innerHTML +'<br>' + "CatChat: Thank you for using CatChat! You will be connected with a trained professional shortly.";
+		var chatbox = document.getElementById("chatpagebox");
+    var message = document.getElementById("chatpageSubmit").value
+    if (message){
+  		if (i==0 ){
+  			chatbox.innerHTML = "You: " + document.getElementById("chatpageSubmit").value;
+  		}
+  		if (i > 0) {
+  			chatbox.innerHTML = chatbox.innerHTML + '<br>' + "You: " + document.getElementById("chatpageSubmit").value; 
+  		}
+  		document.getElementById("chatpageSubmit").value = "";
+  		if (i==0) {
+  			setTimeout(response, 500)
+  			i = i + 1;
+  		}
+  	}
+  	function response() {
+  		var chatbox = document.getElementById("chatpagebox");
+  		chatbox.innerHTML = chatbox.innerHTML +'<br>' + "CatChat: Thank you for using CatChat! You will be connected with a trained professional shortly.";
+    }
 	}
 </script>
-
+      <!-- FOOTER -->
+    <footer>
+    <div id="footer">
+      <div class="container footer-custom">
+      <p class="pull-right"><a href="#homePage">Back to top</a></p>
+      <p>&copy; CatChat 2016</p>
+    </div>
+    </footer>
 </body>
 </html>
