@@ -15,6 +15,7 @@
 
     <!-- Custom CSS and JS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/psychologistChat.css">
     <script src="script.js"></script>
 
   </head>
@@ -49,7 +50,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-3 col-md-2 sidebar">
+    <div class="col-md-2 sidebar">
       <ul class="nav nav-sidebar">
         <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Reports</a></li>
@@ -71,6 +72,49 @@
     </div>
   </div>
 </div>
+
+<!-- CHAT INTERFACE -->
+<div class="container-fluid" id="pscyhologist-chat">
+  <div class="row">
+    <div class="col-md-10">
+      <div id="chatpageBody">
+        <div id="chatpagebox">
+          Welcome to CatChat! Please begin chatting by typing into the box below.
+        </div>
+        <div id="textbar">
+          <input id="chatpageSubmit" type="text" name="chat" value="">
+          <button type="button" class="btn btn-primary" id="chatpageEnter">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var submit = document.getElementById("chatpageEnter");
+var i = 0;
+  submit.onclick = function(e) {
+    var chatbox = document.getElementById("chatpagebox");
+    var message = document.getElementById("chatpageSubmit").value
+    if (message){
+      if (i==0 ){
+        chatbox.innerHTML = "You: " + document.getElementById("chatpageSubmit").value;
+      }
+      if (i > 0) {
+        chatbox.innerHTML = chatbox.innerHTML + '<br>' + "You: " + document.getElementById("chatpageSubmit").value; 
+      }
+      document.getElementById("chatpageSubmit").value = "";
+      if (i==0) {
+        setTimeout(response, 500)
+        i = i + 1;
+      }
+    }
+    function response() {
+      var chatbox = document.getElementById("chatpagebox");
+      chatbox.innerHTML = chatbox.innerHTML +'<br>' + "CatChat: Thank you for using CatChat! You will be connected with a trained professional shortly.";
+    }
+  }
+</script>
 
 <!-- FOOTER -->
     <footer>
