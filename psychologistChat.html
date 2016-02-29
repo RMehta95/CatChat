@@ -46,34 +46,38 @@
         </div>
       </div>
     </nav>
-<!-- New stuff -->
 
+<!-- CHAT INTERFACE -->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-2 sidebar" id="sidebar">
-      <ul class="nav nav-sidebar">
-        <li class="active"><a href="#" onclick="userResponse('Chris')">Chris <span class="sr-only">(current)</span></a></li>
-        <li><a href="#" onclick="userResponse('Rohan')">Rohan</a></li>
-        <li><a href="#" onclick="userResponse('Christian')">Christian</a></li>
-        <li><a href="#" onclick="userResponse('Bobby')">Bobby</a></li>
-      </ul>
-
-    </div>
-        <div class="col-md-10" id="pscyhologist-chat">
-      <div id="chatpageBody">
-        <div id="chatpagebox">
-          Welcome to CatChat! Please begin chatting by selecting a student in the queue.
+        <div class="col-md-2 sidebar" id="sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#" onclick="userResponse('Chris')">Chris <span class="sr-only">(current)</span></a></li>
+            <li><a href="#" onclick="userResponse('Rohan')">Rohan</a></li>
+            <li><a href="#" onclick="userResponse('Christian')">Christian</a></li>
+            <li><a href="#" onclick="userResponse('Bobby')">Bobby</a></li>
+          </ul>
         </div>
-        <div id="textbar">
-          <input id="chatpageSubmit" type="text" name="chat" value="">
-          <button type="button" class="btn btn-primary" id="chatpageEnter">Send</button>
+        <div class="col-md-2" id="pscyhologist-chat">
+          <img src="" id="student-icon">
+          <!-- <img src="img/Chris.jpg" id="chris">
+          <img src="img/Rohan.jpg" id="rohan">
+          <img src="img/Christian.jpg" id="christian">
+          <img src="img/Bobby.jpg" id="bobby"> -->
         </div>
-      </div>
+        <div class="col-md-8" id="pscyhologist-chat">
+          <div id="chatpageBody">
+            <div id="chatpagebox">
+              Welcome to CatChat! Please begin chatting by selecting a student in the queue.
+            </div>
+            <div id="textbar">
+              <input id="chatpageSubmit" type="text" name="chat" value="">
+              <button type="button" class="btn btn-primary" id="chatpageEnter">Send</button>
+            </div>
+        </div>
     </div>
   </div>
 </div>
-
-<!-- CHAT INTERFACE -->
 
 
 <script>
