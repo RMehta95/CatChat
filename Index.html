@@ -113,9 +113,10 @@
               <h2 class="featurette-heading">Welcome to CatChat<br><span class="text-muted">
                 Stressed?</span></h2></br>
               <p class="lead text-justify"><br> Log in to talk to licensed professionals right now!</p>
-              <div id="chatbox">Start chatting by typing into the box below.
-              </div>
-                <input id="chatsubmit" type="text" name="chat" value="">
+              	<div id="chatbox">
+					Welcome to CatChat! Please begin chatting by typing into the box below.
+				</div>
+				<input id="chatsubmit" type="text" name="chat" value="">
                 <button type="button" class="btn btn-primary" id="enter">Chat Now!</button>
             </div>
                 <div class="col-md-4" id="img">
@@ -127,13 +128,28 @@
 
     <!-- Container (Chat Section) --> 
  
-		// <script>
+	// <script>
 		var submit = document.getElementById("enter");
+		var i = 0;
 			submit.onclick = function(e) {
 				var chatbox = document.getElementById("chatbox");
-				chatbox.innerHTML = "Thank you for trying CatChat! This part of our website is still under construction and not yet fully functional. Please check back at a later date."
+				if (i==0){
+					chatbox.innerHTML = "You: " + document.getElementById("chatsubmit").value;
+				}
+				if (i > 0) {
+					chatbox.innerHTML = chatbox.innerHTML + '<br>' + "You: " + document.getElementById("chatsubmit").value; 
+				}
+				document.getElementById("chatsubmit").value = "";
+				if (i==0) {
+					setTimeout(response, 1500)
+					i = i + 1;
+				}
 			}
-		// </script>
+			function response() {
+				var chatbox = document.getElementById("chatbox");
+				chatbox.innerHTML = chatbox.innerHTML +'<br>' + "CatChat: Thank you for using CatChat! You will be connected with a trained professional shortly.";
+			}
+	// </script>
       </div>
 
     </div>
