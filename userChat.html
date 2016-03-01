@@ -15,10 +15,12 @@
 
     <!-- Custom CSS and JS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="script.js"></script>
+    <script src="generalchat.js"></script>
 
 </head>
-<body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <!-- Navbar -->
+  <body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -32,19 +34,20 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li><a href="userChat.html">CHAT</a></li>
-              <li><a href="resources.html">RESOURCES</a></li> 
-              <li><a href="index.html#aboutus">ABOUT US</a></li> 
-              <li><a href="index.html#contactus">CONTACT US</a></li> 
+              <li><a href="userChat.html">Chat</a></li>
+              <li><a href="resources.html">Resources</a></li> 
+              <li><a href="index.html#aboutus">About us</a></li> 
+              <li><a href="index.html#contactus">Contact</a></li> 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
       </div>
     </nav>
+  
 	<div id="chatpageBody">
+      <p id="disclaimer">DISCLAIMER: CatChat is not a suicide hotline. If you have thoughts of suicide, please call the National Suicide Prevention Line at 1-800-273-8255</p>
 				<div id="chatpagebox">
 					Welcome to CatChat! Please begin chatting by typing into the box below.
 				</div>
@@ -54,32 +57,6 @@
 				</div>
 	</div>
 
-
-<script>
-var submit = document.getElementById("chatpageEnter");
-var i = 0;
-	submit.onclick = function(e) {
-		var chatbox = document.getElementById("chatpagebox");
-    var message = document.getElementById("chatpageSubmit").value
-    if (message){
-  		if (i==0 ){
-  			chatbox.innerHTML = "You: " + document.getElementById("chatpageSubmit").value;
-  		}
-  		if (i > 0) {
-  			chatbox.innerHTML = chatbox.innerHTML + '<br>' + "You: " + document.getElementById("chatpageSubmit").value; 
-  		}
-  		document.getElementById("chatpageSubmit").value = "";
-  		if (i==0) {
-  			setTimeout(response, 500)
-  			i = i + 1;
-  		}
-  	}
-  	function response() {
-  		var chatbox = document.getElementById("chatpagebox");
-  		chatbox.innerHTML = chatbox.innerHTML +'<br>' + "CatChat: Thank you for using CatChat! You will be connected with a trained professional shortly.";
-    }
-	}
-</script>
       <!-- FOOTER -->
     <footer>
     <div id="footer">

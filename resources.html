@@ -15,8 +15,7 @@
 
     <!-- Custom CSS and JS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="script.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/resources.css">
 </head>
 <body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <nav class="navbar navbar-inverse">
@@ -38,7 +37,6 @@
               <li><a href="index.html#contactus">CONTACT US</a></li> 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
@@ -47,8 +45,8 @@
 	
 	<!-- VIDEOS -->
 	<div id="welcome">
-        <div class="container">
-          <div class="row">
+    <div class="container">
+      <div class="row">
 		  <div class="col-md-12">
 			<h2>Videos</h2>
 		  </div>
@@ -63,7 +61,7 @@
 					<p>The only thing cuter than kittens or puppies is kittens and puppies together!</p>
 				</div>
 			</div>
-			<div class="col-md-12" style="height:25px"></div>
+			<div class="col-md-12" ></div>
 			<div class="col-md-6" style="float:left;">
 				<div class="videoWrapper">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/6p_yaNFSYao" frameborder="0" allowfullscreen></iframe>
@@ -75,26 +73,75 @@
 					<p>This 10 minutes guided mediation on mindfulllness can help you feel refreshed and more focused.</p>
 				</div>
 			</div>
+    <div class="col-md-6" style="float:left;">
+        <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/OgGbNJdMaTY" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6" style="float:left;">
+        <div id="vid2_description" style="width:80%; height:315px; padding-left:5%;">
+          <h3>Best Funny Vidoes</h3>
+          <p>Need a good laugh? Ease your stress withh this compilation of funny videos!</p>
+        </div>
+      </div>
+    <div class="col-md-6" style="float:left;">
+        <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qrx1vyvtRLY" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6" style="float:left;">
+        <div id="vid2_description" style="width:80%; height:315px; padding-left:5%;">
+          <h3>Relaxing Music</h3>
+          <p>An 8-hour video to play on low volume in the background of your computer to calm yourself while you do your work.</p>
+        </div>
+      </div>
 			<div class="col-md-12" style="height:50px"></div>
 		  </div>
 		</div>
 	</div>
+
 	
 	<!-- GAMES -->
-      <div id="how">
+      <div id="games">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <h2>Games</h2>
-				<div id="game1" style="float:left; width:50%;">
-					<a href="http://interactive.usc.edu/projects/cloud/flowing/"><img src="img/flow.png"></a>
-				</div>
-				<div id="game1_description" style="width:40%; height=315px; padding-left:5%; float:left;">
-					<h3>Flow</h3>
-					<p>Turn up the volume and enjoy the ambiance of a simple game deisgned to simulate life as a hungry microbe.</p>
-				</div>
+    <div class="col-md-6" style="float:left;" id="game_container">
+        <div style="float:left; width:50%;">
+               <a href="http://interactive.usc.edu/projects/cloud/flowing/" target="_blank"><img src="img/flow.png"></a>
+        </div>
+      </div>
+      <div class="col-md-6" style="float:left;">
+        <div id="game_description" style="width:80%; height:315px; padding-left:5%;">
+          <h3>Flow</h3>
+          <p>Turn up the volume and enjoy the ambiance of a simple game deisgned to simulate life as a hungry microbe..</p>
+        </div>
+      </div>
+    <div class="col-md-6" style="float:left;">
+        <div id="gameimg" style="float:left; width:50%;">
+               <a href="http://www.rawkins.com/games/dolphin-olympics" target="_blank"><img src="img/dolphin_o.jpg"></a>
+        </div>
+      </div>
+      <div class="col-md-6" style="float:left;"  id="game_container">
+        <div id="game_description" style="width:80%; height:315px; padding-left:5%;">
+          <h3>Dolphin Olympics</h3>
+          <p>Be as free as a dolphin as you swim the open ocean as dolphin, jumping as high as you can and collecting points!</p>
+        </div>
+      </div>
+    <div class="col-md-6" style="float:left;">
+        <div id="gameimg" style="float:left; width:50%;">
+               <a href="http://www.ferryhalim.com/orisinal/g3/casanova.htm" target="_blank"><img src="img/cassanova_game.jpg"></a>
+        </div>
+      </div>
+      <div class="col-md-6" style="float:left;" id="game_container">
+        <div id="game_description" style="width:80%; height:315px; padding-left:5%;">
+          <h3>Cassanova</h3>
+          <p>Be a giraffe! Show some love! Give the passing by giraffes smooches are you walk against the grain in this entertaining web game.</p>
+        </div>
+      </div>
+
             </div>
-			<div class="col-md-12" style="height:100px;"></div>
           </div>
         </div>
       </div>

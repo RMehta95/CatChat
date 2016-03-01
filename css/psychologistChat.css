@@ -1,6 +1,4 @@
-#psychologist-chat {
 
-}
 
 #sidebar{
 	float:left;
@@ -8,20 +6,51 @@
 
 #sidebar a{
 	color:#4e2a84;
-    padding-top: 50px;
+    padding-top: 10px;
+    padding-left:20px;
+    font-size: 20px;
+    margin-left:-15px;
 
 }
 
-#student-icon {
-    width: 150px;
+#queueHeader{
+	padding-top: 15px;
+    padding-left:20px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left:-15px;
+    text-decoration: underline;
+}
+
+#queuehelper{
+	margin-top: 10px;
+	color: #515151;
+}
+.student {
+    width: 0%; /* changes to 100% onload in psychchat.js*/
     height: auto;
 }
 
+
 #icon-holder {
-    padding-top: 50px;
+    padding-top: 25px;
 }
+
+#icon-holder p{
+    padding-left: 0px;
+}
+
+#student-name{
+	font-weight:bold;
+}
+
 
 #chatpagebox {
     height: 400px;
-    width: 75%;
+    width: 90%;
+}
+
+#textbar{
+    margin:auto;
+    width:90%; 
 }
