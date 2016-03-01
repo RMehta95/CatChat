@@ -1,5 +1,5 @@
 #psychologist-chat {
-    float: right;
+
 }
 
 #sidebar{
@@ -15,4 +15,13 @@
 #student-icon {
     width: 150px;
     height: auto;
+}
+
+#icon-holder {
+    padding-top: 50px;
+}
+
+#chatpagebox {
+    height: 400px;
+    width: 75%;
 }
