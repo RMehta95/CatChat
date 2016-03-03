@@ -18,7 +18,7 @@ function sendMessage() {
     }
     function response() {
       var chatbox = document.getElementById("chatpagebox");
-      chatbox.innerHTML = chatbox.innerHTML +'<br>' + "Please begin chatting by selecting a student in the queue.";
+      chatbox.innerHTML = chatbox.innerHTML +'<br>' + "Please wait while you are connected to the next available representative.";
     }
     console.log(i);
   }
